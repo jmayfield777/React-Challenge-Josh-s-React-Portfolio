@@ -1,10 +1,12 @@
 import React from 'react';
 
+import styles from './index.module.css';
+
 export const Navbar = () => {
-  return <nav>
-    <a href="/">Josh's Portfolio</a>
-    <div>
-      <ul>
+  return <nav className={styles.Navbar}>
+    <a className={styles.title} href="/">Josh's Portfolio</a>
+    <div className={styles.menu}>
+      <ul className={styles.menuItems}>
         <li><a href="#About">About</a></li>
       </ul>
       <ul>
