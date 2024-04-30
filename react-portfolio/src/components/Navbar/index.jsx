@@ -1,6 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 
 import styles from './index.module.css';
+import { getImage } from '../../utils';
 
 export const Navbar = () => {
   return <nav className={styles.navbar}>
