@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from './Profile.module.css';
-import { getImage } from '../../utils';
+import styles from './index.module.css';
+import { getImage } from '../../utils/getImageHelper';
 
-export const Hero = () => {
+export const Profile = () => {
   return (
   <section className={styles.container}>
     <div className={styles.content}>
@@ -17,7 +17,7 @@ export const Hero = () => {
     </div>
     <img 
       className={styles.profileImg} 
-      src={getImage("profile-image/profile.png")} 
+      src={getImage("Profile-Image/Profile.png")} 
       alt="profile image" 
     />
       <div className={styles.topBlur} />
