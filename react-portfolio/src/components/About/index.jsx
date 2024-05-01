@@ -1,5 +1,8 @@
 import React from "react";
 
+import styles from './index.module.css';
+import { getImage } from '../../utils/getImageHelper';
+
 export const About = () => {
   return (
   <section>
