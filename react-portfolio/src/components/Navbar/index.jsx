@@ -7,7 +7,8 @@ import { getImage } from '../../utils/getImageHelper';
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  return <nav className={styles.navbar}>
+  return (
+  <nav className={styles.navbar}>
     <a className={styles.title} href="/">Josh's Portfolio</a>
     <div className={styles.menu}>
       <img 
@@ -36,5 +37,6 @@ export const Navbar = () => {
         </li>
       </ul>
     </div>
-  </nav>;
+  </nav>
+  );
 };
