@@ -1,15 +1,17 @@
 import React from "react";
 import { getImage } from "../../utils/getImageHelper";
 
+import styles from './index.module.css';
+
 export const Contact = () => {
   return (
-    <footer>
-      <div>
+    <footer id="contact" className={styles.container}>
+      <div className={styles.text}>
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
       </div>
-      <ul>
-        <li>
+      <ul className={styles.links}>
+        <li className={styles.link}>
           <img 
             src={getImage("Contact/emailIcon.png")} 
             alt="Email icon" 
@@ -18,7 +20,7 @@ export const Contact = () => {
             josh.mayfield45@gmail.com
           </a>
         </li>
-        <li>
+        <li className={styles.link}>
           <img 
             src={getImage("Contact/githubIcon.png")} 
             alt="Github icon" 
