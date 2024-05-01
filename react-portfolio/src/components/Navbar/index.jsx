@@ -1,11 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import styles from './index.module.css';
 import { getImage } from '../../utils/getImageHelper';
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const currentPage = useLocation().pathname;
 
   return (
   <nav className={styles.navbar}>
@@ -24,16 +27,44 @@ export const Navbar = () => {
       onClick={() => setMenuOpen(false)}
       >
         <li>
-          <a href="#About">About</a>
+          <Link
+            to="/"
+            className={currentPage === "/" ? "nav-link active" : "nav-link"}
+          >
+            Home 
+          </Link>
         </li>
         <li>
-          <a href="#Projects">Projects</a>
+          <Link
+            to="/About"
+            className={currentPage === "/About" ? "nav-link active" : "nav-link"}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="#Resume">Resume</a>
+          <Link
+            to="/Projects"
+            className={currentPage === "/Project" ? "nav-link active" : "nav-link"}
+          >
+            Projects
+          </Link>
         </li>
         <li>
-          <a href="#Contact">Contact</a>
+          <Link
+            to="Resume"
+            className={currentPage === "/Resume" ? "nav-link active": "nav-link"}
+          >
+            Resume
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/Contact"
+            className={currentPage === "/Contact" ? "nav-link active" : "nav-link"}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </div>
