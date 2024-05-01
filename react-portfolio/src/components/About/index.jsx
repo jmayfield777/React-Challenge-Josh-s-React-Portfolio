@@ -35,7 +35,7 @@ export const About = () => {
         </li>
         <li className={styles.aboutItem}>
           <img 
-            src={getImage("About/uliIcon.png")} 
+            src={getImage("About/uiIcon.png")} 
             alt="UI icon" 
           />
           <div className={styles.aboutItemText}>
