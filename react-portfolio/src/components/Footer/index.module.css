@@ -1,4 +1,4 @@
-/* @import "../../vars.css";
+@import "../../vars.css";
 
 .container {
   color: var(--color-text);
@@ -61,4 +61,4 @@
   .links {
     align-items: center;
   }
-} */
+}
