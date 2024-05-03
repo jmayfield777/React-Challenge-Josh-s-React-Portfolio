@@ -3,7 +3,7 @@ import { EmailValidator } from '../../utils/';
 
 import styles from './index.module.css';
 
-export const Contact = () => {
+export default function Contact() {
 
   const [ formState, setFormState ] = useState({
     name: '',
