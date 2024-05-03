@@ -1,5 +1,5 @@
 import React from "react";
-import { getImage } from "../../utils/getImageHelper";
+import { getImage } from "../utils/getImageHelper";
 
 import styles from './index.module.css';
 

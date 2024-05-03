@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import styles from './index.module.css';
-import { getImage } from '../../utils/getImageHelper';
+import { getImage } from '../utils/getImageHelper';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
