@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from './index.module.css';
+import styles from './ProfilePage.module.css';
 import { getImage } from '../utils/getImageHelper';
 
 export default function Profile() {
