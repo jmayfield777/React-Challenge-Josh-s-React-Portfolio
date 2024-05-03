@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
-import ErrorPage from './pages/ErrorPage';
-import About from './pages/About.jsx';
-import Projects from './pages/Projects.jsx';
-import Resume from './pages/Resume.jsx';
+import ErrorPage from './pages/ErrorPage/index.jsx';
+import Profile from './pages/Profile/index.jsx';
+import About from './pages/About/index.jsx';
+import Projects from './pages/Projects/index.jsx';
+import Resume from './pages/Resume/index.jsx';
 
 import './index.css'
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
