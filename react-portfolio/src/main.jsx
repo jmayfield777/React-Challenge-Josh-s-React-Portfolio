@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
-import ErrorPage from './pages/ErrorPage/index.jsx';
-import Profile from './pages/Profile/index.jsx';
-import About from './pages/About/index.jsx';
-import Projects from './pages/Projects/index.jsx';
-import Resume from './pages/Resume/index.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
+import Profile from './pages/ProfilePage.jsx';
+import About from './pages/AboutPage.jsx';
+import Projects from './pages/ProjectsPage.jsx';
+import Resume from './pages/ResumePage.jsx';
 
 import './index.css'
 
