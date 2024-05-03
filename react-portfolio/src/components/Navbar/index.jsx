@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import styles from './index.module.css';
 import { getImage } from '../../utils/getImageHelper';
 
-export const Navbar = () => {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const currentPage = useLocation().pathname;
