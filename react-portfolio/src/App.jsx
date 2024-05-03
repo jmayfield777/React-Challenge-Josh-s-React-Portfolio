@@ -1,37 +1,27 @@
-import { Outlet } from 'react-router-dom';
+import React from 'react';
+
 
 import styles from './App.module.css';
 
+import PortfolioContainer from './components/PortfolioContainer';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 
-// import { Profile } from './components/Profile';
-// import { About } from './components/About';
-// import { Projects } from './components/Projects';
-// import { Contact } from './components/Contact';
-
-// function App() {
-
-
-//   return (
-//     <div className={styles.App}>
-//       <Navbar />
-//       <Profile />
-//       <About />
-//       <Projects />
-//       <Contact />
-//     </div>
-//   )
-// }
+import { useState } from 'react';
 
 function App() {
+  const [ currentPage, setCurrentPage ] = useState('About');
+
   return (
     <div className={styles.App}>
       <Navbar />
-      <Outlet />
+      <PortfolioContainer
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
