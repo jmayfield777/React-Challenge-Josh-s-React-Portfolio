@@ -3,7 +3,7 @@ import React from "react";
 import styles from './index.module.css';
 import { getImage } from '../../utils/getImageHelper';
 
-export const Profile = () => {
+export default function Profile() {
   return (
   <section className={styles.container}>
     <div className={styles.content}>
