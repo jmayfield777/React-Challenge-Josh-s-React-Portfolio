@@ -3,7 +3,7 @@ import React from "react";
 import styles from './index.module.css';
 import { getImage } from '../../utils/getImageHelper';
 
-export const About = () => {
+export default function About() {
   return (
   <section className={styles.container} id="about">
     <h2 className={styles.title}>About</h2>
