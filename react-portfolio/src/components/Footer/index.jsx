@@ -3,7 +3,7 @@ import { getImage } from "../../utils/getImageHelper";
 
 import styles from './index.module.css';
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
