@@ -1,7 +1,7 @@
 import React from "react";
 import { getImage } from "../utils/getImageHelper";
 
-import styles from './index.module.css';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
