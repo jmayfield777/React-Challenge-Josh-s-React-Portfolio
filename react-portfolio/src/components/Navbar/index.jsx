@@ -45,7 +45,7 @@ export const Navbar = () => {
         <li>
           <Link
             to="/Projects"
-            className={currentPage === "/Project" ? "nav-link active" : "nav-link"}
+            className={currentPage === "/Projects" ? "nav-link active" : "nav-link"}
           >
             Projects
           </Link>
