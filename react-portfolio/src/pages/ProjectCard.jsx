@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./ProjectCard.module.css";
 
-import { getImage } from '../../utils/getImageHelper';
+import { getImage } from '../utils/getImageHelper';
 
 export default function ProjectCard({ 
   project: {title, imageSrc, description, skills, demo, source}
